@@ -1,1 +1,0 @@
-cmd_/home/dima/Code/dspeaker/dspeaker.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/x86/module.lds -o /home/dima/Code/dspeaker/dspeaker.ko /home/dima/Code/dspeaker/dspeaker.o /home/dima/Code/dspeaker/dspeaker.mod.o;  true
