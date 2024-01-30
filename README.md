@@ -11,5 +11,7 @@ just run controller.sh
 ## ignore this
 
 dmesg | tail -n 1
+
 rmmod dspeaker
+
 insmod dspeaker.ko
