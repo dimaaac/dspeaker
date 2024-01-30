@@ -1,1 +1,0 @@
-cmd_/home/dima/Code/dspeaker/Module.symvers :=  sed 's/ko$$/o/'  /home/dima/Code/dspeaker/modules.order | scripts/mod/modpost -m     -o /home/dima/Code/dspeaker/Module.symvers -e -i Module.symvers -T - 
