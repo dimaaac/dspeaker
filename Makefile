@@ -1,10 +1,11 @@
 obj-m += dspeaker.o
 
-all: build
+KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+ALSA_CFLAGS += -I/lib/modules/$(shell uname -r)/build/include
 
-build:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD)
+all:
+	make -C $(KERNELDIR) M=$(PWD) CFLAGS_MODULE="$(ALSA_CFLAGS)" modules
 
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	 make -C $(KERNELDIR) M=$(PWD) clean
 
