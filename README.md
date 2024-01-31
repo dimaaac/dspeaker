@@ -1,5 +1,5 @@
 # dspeaker
-The ultimate linux kernel module driver made for a low quality speaker from ebay.
+The ultimate linux kernel module driver made for a low quality speaker from ebay. Keep in mind that your speaker will probably not work with this driver.
 
 ## What
 uhh, for now its just a template module, soooooo
